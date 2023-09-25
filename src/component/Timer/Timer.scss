@@ -1,0 +1,16 @@
+.timerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100svh;
+    width: 100%;
+
+    .timer {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        color: rgb(75, 29, 29);
+    }
+}

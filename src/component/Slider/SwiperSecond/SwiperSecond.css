@@ -1,0 +1,107 @@
+.mySwiper{
+    width: 100%;
+    /* height: 400px; */
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+  }
+
+.swiper-slide {
+    transition: all 1s;
+}
+.swiper-pagination-bullet{
+    background-color: transparent;
+    opacity: 0.8;
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    opacity: 0.5;
+    
+}
+.swiper-pagination-bullet:hover{
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    /* background-color: red; */
+    width: 20px;
+    height: 20px;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper{
+    padding: 0 20px 20px 20px !important;
+  }
+  /* .swiper-pagination-bullet{
+      background-color:red;
+      opacity: 0.4;
+      width: 10px;
+      height: 10px;
+      @media screen and (max-width: 600px) {
+      display: none;
+    }
+  } */
+  
+ 
+
+  .swiper-pagination-bullet-active{
+      opacity: 1;
+      /* border: 4px solid ; */
+      /* outline: 2px solid rgb(235, 5, 5); */
+      /* background-color:rgb(99, 6, 250) ; */
+      position: relative;
+      @media screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet-active::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .swiper-button-next{
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    color: red;
+    opacity: 1 ;
+    position: absolute;
+    right: -10px;
+   &::after{
+    font-size: 28px !important;
+   }
+  }
+  .swiper-button-disabled{
+    color: red;
+    opacity: 0.4 !important;
+  }
+  .swiper-button-prev{
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    position: absolute;
+    left: 0px;
+    color:red;
+    opacity: 0.9 ;
+    &::after{
+    font-size: 28px !important;
+   }
+  }

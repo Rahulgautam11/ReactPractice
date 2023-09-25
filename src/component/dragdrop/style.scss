@@ -1,0 +1,22 @@
+.dragdropcontainer {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+    .imagewrap {
+        width: 50svw;
+        height: 50svh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        img {
+            height: 100px;
+            width: 100px;
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
