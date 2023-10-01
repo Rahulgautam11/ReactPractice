@@ -22,6 +22,7 @@ import Deleteitem from "./component/DeleteElement";
 import Practice from "./component/Practice/Practice";
 import Todo from "./component/TOdo";
 import IncreamentDecrement from "./component/IncDec";
+import ErrorPage from "./component/ErrorPage";
 const Approute = () => {
 
   return (
@@ -49,6 +50,7 @@ const Approute = () => {
         <Route path={"/practice"} component={Practice} />
         <Route path={"/to-do"} component={Todo} />
         <Route path={"/inc-dec"} component={IncreamentDecrement} />
+        <Route path={"*"} component={ErrorPage} />
 
       </Switch>
     </>

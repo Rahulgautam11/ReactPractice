@@ -16,7 +16,7 @@ const Second = () => {
     useEffect(() => {
         disPatch(ElectronicProductAPi())
     }, [])
-
+    console.log('second component')
     return (
         <React.Fragment>
             <h1>fetch data using axios</h1>
@@ -39,4 +39,4 @@ const Second = () => {
     )
 }
 
-export default Second;
+export default React.memo(Second);
